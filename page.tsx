@@ -1,23 +1,29 @@
-import React from 'react'
-import Image from 'next/image'
-const Check = () => {
-  return (
-    <div className="w-full flex flex-col items-center justify-center">
-      <Image
-        src="/images/hh1.png"
-        alt='join1'
-        width={500}
-        height={500}
-      />
-      <Image
-        src="/images/hh2.png"
-        alt='join2'
-        width={500}
-        height={500}
-      />
-    </div>
-    
-  )
-}
+import React from 'react';
+import Image from 'next/image';
 
-export default Check
+const Detail = () => {
+  return (
+    <div className='grid grid-cols-2 gap-4'>
+      <div className='p-2'>
+        <Image
+          src="/images/shoesp1.png"
+          alt='shoes'
+          layout="responsive"
+          width={500} // Used for aspect ratio
+          height={500} // Used for aspect ratio
+        />
+      </div>
+      <div className='p-2'>
+        <Image
+          src="/images/text1.png"
+          alt='shoes description'
+          layout="responsive"
+          width={500} // Used for aspect ratio
+          height={500} // Used for aspect ratio
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Detail;
